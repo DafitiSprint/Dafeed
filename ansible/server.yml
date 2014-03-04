@@ -1,0 +1,13 @@
+---
+- name: Install DaFeed development environment 
+  hosts: all
+  sudo: True
+  vars: 
+    root_folder: "/var/www"
+    server_name: "dafeed.dev"
+    document_root: "{{ root_folder }}/{{ server_name }}"
+    nginx_folder: "/etc/nginx"
+  roles:
+    - common
+    - nginx
+    - php

@@ -1,0 +1,9 @@
+---
+- name: Common - Update repository
+  apt: update_cache=yes
+- name: Common - Install Vim
+  apt: pkg=$item state=latest
+  with_items:
+    - vim
+    - curl
+    - git

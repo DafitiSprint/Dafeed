@@ -2,3 +2,5 @@
 .DS_Store
 vendor
 build
+.vagrant
+vagrant_ansible_inventory_default
