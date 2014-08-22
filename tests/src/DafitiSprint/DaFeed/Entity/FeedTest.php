@@ -24,7 +24,7 @@ class FeedTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @expectedException InvalidArgumentException
-     * @expectedExceptionMessage Ola
+     * @expectedExceptionMessage Invalid url. 
      */
     public function testShouldThrowExceptionWhenInvalidUrl()
     {
